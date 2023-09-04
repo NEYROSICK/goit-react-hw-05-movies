@@ -26,12 +26,6 @@ const MovieCard = ({ movie }) => {
             width={192}
             height={282}
             alt={movie.original_title + ' Movie Poster'}
-            effect="blur"
-            placeholderSrc={
-              movie.poster_path
-                ? 'https://image.tmdb.org/t/p/original' + movie.poster_path
-                : emptyIMG
-            }
           />
         </ImgContainer>
       </ImgLink>
