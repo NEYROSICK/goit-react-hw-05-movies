@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import GlobalContext from 'context/GlobalContext';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/goit-react-hw-05-movies">
     <React.StrictMode>
       <GlobalContext>
         <App />
