@@ -6,6 +6,7 @@ import { Context } from 'context/GlobalContext';
 import React, { useContext, useEffect, useState } from 'react';
 import { BrandColor, H1, Main, MoviesList } from './movies.styled';
 import Loader from 'components/Loader/Loader';
+import { NotFound } from 'components/Reviews/reviews.styled';
 
 const Movies = () => {
   const [movies, setMovies] = useState([]);
@@ -50,7 +51,13 @@ const Movies = () => {
               })}
             </MoviesList>
           </>
-        ) : null}
+        ) : (
+          <Container>
+            <NotFound>
+              Sorry, we don't find any of movies for your query😢
+            </NotFound>
+          </Container>
+        )}
       </Container>
     </Main>
   );
