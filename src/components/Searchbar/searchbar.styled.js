@@ -20,6 +20,9 @@ export const Input = styled.input`
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   font-size: 16px;
   font-family: Montserrat;
+  &::placeholder {
+    color: #d2aeae;
+  }
 `;
 
 export const Button = styled.button`

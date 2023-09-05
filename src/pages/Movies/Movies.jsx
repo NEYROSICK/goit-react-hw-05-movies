@@ -51,13 +51,14 @@ const Movies = () => {
               })}
             </MoviesList>
           </>
-        ) : (
+        ) : null}
+        {!movies.length && searchParams.get('query') ? (
           <Container>
             <NotFound>
               Sorry, we don't find any of movies for your query😢
             </NotFound>
           </Container>
-        )}
+        ) : null}
       </Container>
     </Main>
   );
