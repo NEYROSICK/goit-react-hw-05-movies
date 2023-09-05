@@ -34,7 +34,7 @@ const Searchbar = ({ movies }) => {
         value={value}
         name="search"
         ref={inputRef}
-        placeholder="Enter title of the movie"
+        placeholder="Enter a title of the movie"
       />
       <Button>
         <FaEye size={20} color={'white'} />
